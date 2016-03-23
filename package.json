@@ -1,0 +1,35 @@
+{
+  "name": "angular-image-reveal",
+  "version": "1.0.0",
+  "description": "Angular directive for fading in images",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanford/angular-image-reveal.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanford/angular-image-reveal/issues"
+  },
+  "keywords": [
+    "angular",
+    "image",
+    "image reveal",
+    "fade in",
+    "loading",
+    "loader",
+    "image loader"
+  ],
+  "author": "Jack Hanford <jackhanford@gmail.com> (http://www.jackhanford.com/)",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "~1.5.2",
+    "assert-semver-operator": "~1.0.1"
+  },
+  "scripts": {
+    "test": "standard && assert-operator ./ '~'"
+  },
+  "peerDependencies": {
+    "angular": ">=1.3 <2"
+  }
+}
