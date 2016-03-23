@@ -7,18 +7,22 @@ function imageRevealDirective () {
   return {
     restrict: 'A',
     scope: {
-      errImage: '@'
+      fallback: '@',
+      duration: '@'
     },
     link: function (scope, element, attrs) {
+      element.css('opacity', 0)
+      element.css('transition', 'opacity linear ' + scope.duration)
+      element.css('-webkit-transition', 'opacity linear ' + scope.duration)
+
       element.bind('load', function () {
         reveal()
       })
 
       element.bind('error', function () {
         reveal()
-
-        if (scope.errImage) {
-          element.attr('src', scope.errImage)
+        if (scope.fallback) {
+          element.attr('src', scope.fallback)
         }
       })
 

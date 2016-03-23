@@ -22,7 +22,7 @@ angular
 
 ```
 // template.html
-<img src="..." image-reveal err-image="path/to/fallback.jpg"
+<img src="..." image-reveal fallback="path/to/fallback.jpg" duration=".15s">
 ```
 
 
