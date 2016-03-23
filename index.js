@@ -7,9 +7,9 @@ function imageRevealDirective () {
   return {
     restrict: 'A',
     scope: {
-      errImageUrl: '='
+      errImage: '@'
     },
-    function link (scope, element, attrs) {
+    link: function (scope, element, attrs) {
       element.bind('load', function () {
         reveal()
       })
@@ -17,8 +17,8 @@ function imageRevealDirective () {
       element.bind('error', function () {
         reveal()
 
-        if (scope.errImageUrl) {
-          element.attr('src', scope.errImageUrl)
+        if (scope.errImage) {
+          element.attr('src', scope.errImage)
         }
       })
 
