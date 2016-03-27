@@ -1,4 +1,5 @@
 ## angular-image-reveal
+Simple angular directive, that binds to the image load event and fades the image in upon loading. Also has an optional fallback attribute if the image isn't able to load.
 
 [![NPM][notify-icon]][notify-url]
 
@@ -22,7 +23,7 @@ angular
 
 ```
 // template.html
-<img src="..." image-reveal fallback="path/to/fallback.jpg" duration=".15s">
+<img src="..." image-reveal fallback="path/to/fallback-image.jpg" duration=".15s">
 ```
 
 
