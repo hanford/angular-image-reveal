@@ -28,4 +28,4 @@ angular
 
 
 [notify-icon]: https://nodei.co/npm/angular-image-reveal.png?downloads=true
-[notify-url]: https://npmjs.org/package/angular-notify
+[notify-url]: https://npmjs.org/package/angular-image-reveal
